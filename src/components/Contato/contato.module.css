@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para melhorar o modelo de caixa padrão */
+    font-family: 'Poppins';
+}
+
+.header {
+    background-color: #5c2e7e;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Adicionado preenchimento nas laterais para dispositivos menores */
+}
+
+.texto {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin: auto;
+}
+
+.texto a {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.contato {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.emergencia {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.emergencia text {
+    color: red;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.linha {
+    margin: 10px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.538);
+    border-radius: 20px;
+}
+
+.telEmergency {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 20px; /* Adicionado margem nas laterais para dispositivos menores */
+    background-color: #DE1717D4;
+}
+
+.telEmergency text {
+    color: black;
+    text-align: center;
+}
+
+.telEmergencyB {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 20px; /* Adicionado margem nas laterais para dispositivos menores */
+    background-color: #EC4713D4;
+}
+
+.telEmergencyB text {
+    color: black;
+    text-align: center;
+}
+.iconW{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: forestgreen;
+}
+/* Adicionado regra de mídia para dispositivos menores */
+@media only screen and (max-width: 400px) {
+        .header {
+            flex-direction: column;
+            height: 50px auto;
+    }
+
+    .texto {
+        font-size: 20px;
+        /* margin: 10px 0; */
+    }
+
+     /*.telEmergency {
+        margin: 10px;
+    } */
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para melhorar o modelo de caixa padrão */
+    font-family: 'Poppins';
+}
+
+.header {
+    background-color: #5c2e7e;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Adicionado preenchimento nas laterais para dispositivos menores */
+}
+
+.texto {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin: auto;
+}
+
+.texto a {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.container {
+    text-align: justify;
+    margin: 10px; /* Adicionado margem para dispositivos menores */
+}
+
+.textoP {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 400;
+    font-size: medium;
+}
+
+.conteudo {
+    color: black;
+}
+
+/* Adicionado regra de mídia para dispositivos menores */
+@media only screen and (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        height: 50px auto;
+}
+    .texto {
+        font-size: 20px; /* Ajustado o tamanho da fonte para dispositivos menores */
+    }
+}
